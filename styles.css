@@ -1,0 +1,108 @@
+body {
+  /*ok*/
+  min-width: 290px;
+  line-height: 2.5rem;
+  font-size: 1.7rem;
+  font-family: "Kanit", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /*1 rem 10px*/
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.decoration li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.title {
+  /*ok*/
+  font-size: 3rem;
+  margin: 3.2rem 0;
+  margin-left: 2rem;
+}
+
+.margen li {
+  padding: 1.5rem;
+}
+
+#navbar li {
+  border-top: 1px solid black;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.margin {
+  margin: 3rem 0;
+}
+
+.margin:first-of-type,
+.margin:last-of-type {
+  margin: 0;
+}
+
+code {
+  display: block;
+  background-color: rgb(207, 255, 195);
+  padding: 1rem;
+  border-radius: 5px;
+  color: rgb(195, 0, 255);
+}
+
+#navbar {
+  min-width: 290px;
+  position: fixed;
+  overflow: auto;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid black;
+}
+
+@media only screen and (max-width: 728px) {
+  #navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    border-bottom: 1px solid #000;
+    z-index: 1;
+  }
+}
+
+#navbar ul {
+  padding-inline-start: 0px;
+}
+
+#main-doc {
+  margin: 4rem;
+  margin-left: 34rem;
+  /* border: 2px solid green; */
+}
+
+@media only screen and (max-width: 728px) {
+  #main-doc {
+    padding: 2rem;
+    margin-left: 0px;
+    position: relative;
+    margin-top: 330px;
+  }
+}
